@@ -1,0 +1,52 @@
+<!-- ***********************************************************************************
+* Class:		CS 290
+* Assignment:	Database Interaction and UI
+* Author:		Tommy Armstrong
+* Date:			6/7/2019
+* Description:	This is the html file that holds a form and table element in order to
+*				send and display exercise workout data to and from an external server.
+***************************************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database Interactions and UI</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<form action="" id="form-add">
+		<fieldset>
+			<legend>Enter New Workout</legend>
+			<label for="name">Name: </label>
+			<input type="text" name="name" id="name">
+			<label for="reps">Reps: </label>
+			<input type="number" name="reps" id="reps">
+			<label for="weight">Weight: </label>
+			<input type="number" name="weight" id="weight">
+			<label for="date">Date: </label>
+			<input type="date" name="date" id="date">
+			<label for="unit">Units: </label>
+			<input type="text" name="unit" id="unit">
+			<input type="submit" name="submitBtn" id="addRowBtn" value="Add">
+		</fieldset>
+	</form>
+
+	<table>
+		<caption>Workouts</caption>
+		<thead>
+			<th>Name</th>
+			<th>Reps</th>
+			<th>Weight</th>
+			<th>Date</th>
+			<th>Unit</th>
+			<th></th>
+			<th></th>
+		</thead>
+		<tbody id="tableBody">
+		</tbody>
+	</table>
+
+	<script src="index.js"></script>
+</body>
+</html>
